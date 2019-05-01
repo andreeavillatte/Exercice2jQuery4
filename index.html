@@ -1,0 +1,111 @@
+<!-- ne pas modifier le html et le head -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Exercice2jQuery4</title>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <h2>Header</h2>
+  </header>
+  <!-- START Bootstrap-Cookie-Alert -->
+  <!-- container de la page pour mise en forme bootstrap, ne pas toucher -->
+  <nav class="navbar navbar-light justify-content-center">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#!">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#!">Link</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">jQuery - Exercice 2 :</h1>
+        <p class="lead">Demander à l'aide d'un formulaire les 5 dernières notes d'un élève.
+
+          Calculer sa moyenne et déterminer son appréciation.</p>
+        <hr class="my-2">
+        <ul>
+          <li>Si la moyenne de l'élève est supérieure ou égale à 0 et inférieure à 10, il aura comme appréciation : "En
+            dessous de la moyenne".</li>
+          <li>Si la moyenne de l'élève est supérieure ou égale à 10 et inférieure à 13, il aura comme appréciation :
+            "Moyen".</li>
+          <li>Si la moyenne de l'élève est supérieure ou égale à 13 et inférieure à 16, il aura comme appréciation :
+            "Bien".</li>
+          <li>Si la moyenne de l'élève est supérieure ou égale à 16 et inférieure à 20, il aura comme appréciation :
+            "Très bien".</li>
+          <li>Si la moyenne de l'élève est égale à 20, il aura comme appréciation : "Excellent".</li>
+        </ul>
+        <p class="lead">Afficher la moyenne et l'appréciation de l'élève.</p>
+      </div>
+
+      <h1 class="text-center font-weight-bolder mb-4">Formulaire</h1>
+        <div class="row">
+        <!-- c'est TRES IMPORTANT le NONVALIDATE pentru a verifica cu CSS daca campurile au fost completate conform cerintelor din HTML -->
+        <form novalidate>
+          <div class="form-group">
+            <label class="col-sm-5 col-form-label">Première note</label>
+            <input class="col-sm-5 mb-3" class="form-control shadow" type="number" name="quantity" min="0"
+              max="20" id="validationDefault01" placeholder="Première note" required><br>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-5 col-form-label">Deuxième note</label>
+            <input class="col-sm-5 mb-3" class="form-control shadow" type="number" name="quantity" min="0"
+              max="20" id="validationDefault01" placeholder="Deuxième note" required><br>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-5 col-form-label">Troisième note</label>
+            <input class="col-sm-5 mb-3" class="form-control shadow" type="number" name="quantity" min="0"
+              max="20" id="validationDefault01" placeholder="Troisième note" required><br>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-5 col-form-label">Quatrième note</label>
+            <input class="col-sm-5 mb-3" class="form-control shadow" type="number" name="quantity" min="0"
+              max="20" id="validationDefault01" placeholder="Quatrième note" required><br>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-5 col-form-label">Cinquième note</label>
+            <input class="col-sm-5 mb-3" class="form-control shadow" type="number" name="quantity" min="0"
+              max="20" id="validationDefault01" placeholder="Cinquième note" required><br>
+          </div>
+        </form>
+
+      </div>
+      <div class="text-center">
+          <button id="calcul">Valider</button>
+        </div>
+        <div class="container text-center">
+          <p id="moyenne"></p>
+        </div>
+        <div class="container text-center">
+          <p id="appreciation"></p>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <p>Footer</p>
+  </footer>
+  <!-- scripts boostrap -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="assets/js/main.js"></script> <!--  mon script js perso -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.test {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+}
+h1{
+  font-size: 24px;
+}
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+.color{
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin : 5px;
+}
+
+/* pour valider les champs */
+input:valid {
+  border: 2px solid green;
+}
+input:invalid {
+  border: 2px solid red;
+}
